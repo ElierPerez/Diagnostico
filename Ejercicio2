@@ -9,10 +9,12 @@ import java.util.Scanner;
 public class Ejercicio2 {
     public static void main (String[] args) {
 Scanner teclado=new Scanner(System.in);
-System.out.print("Ingrese el tamaño de una matriz:");
-int tamano=teclado.nextInt(); 
-for(int i=0; i<=tamano; i++){
-for(int k=tamano-1; k>0;k--){
+System.out.print("Ingrese el tamaño de una matriz:"); //El programa nos pedira un numero
+
+
+int tamano=teclado.nextInt();                         
+for(int i=0; i<=tamano; i++){                   //Aqui aplicara la condicion de tal manera que vaya eliminando la mitad (tuve un problema, me salio en vertical)
+for(int k=tamano-1; k>0;k--){                           
 System.out.print(" ");
 }
 for (int k=0;k<i;k++){
