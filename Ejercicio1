@@ -10,14 +10,14 @@ public class Ejercicio1 {
         Scanner teclado=new Scanner(System.in);
         
         System.out.println("Ingresa el tamaño de la matriz:");  
-        int numero=teclado.nextInt();                            //Aqui el programa nos pedira el numero de matriz
+        int numero=teclado.nextInt();                            
 
         if (numero == 0)
-            System.out.println("No se puede mostrar la matriz"); //Aqui la condicion de que si el numero es 0 no mostrara nada
-        else {
-            String[][]n = new String[numero][numero];            //Aqui de lo contrario mostrara nuestro procedimiento
+            System.out.println("No se puede mostrar la matriz"); 
+            
+            String[][]n = new String[numero][numero];          
 
-            for ( int i=0; i < n.length ;i++){                   //volvemos agregar una condicion donde length para que devuelva la cantidad de caracteres
+            for ( int i=0; i < n.length ;i++){                  
                 for (int j=0;  j<n.length;j++){
                     int x = i +1;
                     if((i==j)  ||  (j == (numero - x))){
