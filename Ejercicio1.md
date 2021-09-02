@@ -1,5 +1,3 @@
-# Diagnostico
-
 package diagnostico;
 import java.util.Scanner;
 /**
