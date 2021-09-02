@@ -9,24 +9,24 @@ public class Ejercicio1 {
 
         Scanner teclado=new Scanner(System.in);
         
-        System.out.println("Ingresa el tamaño de la matriz:"); 
-        int numero=teclado.nextInt();
+        System.out.println("Ingresa el tamaño de la matriz:");  
+        int numero=teclado.nextInt();                            //Aqui el programa nos pedira el numero de matriz
 
         if (numero == 0)
-            System.out.println("No se puede mostrar la matriz");
+            System.out.println("No se puede mostrar la matriz"); //Aqui la condicion de que si el numero es 0 no mostrara nada
         else {
-            String[][]dibujo = new String[numero][numero];
+            String[][]n = new String[numero][numero];            //Aqui de lo contrario mostrara nuestro procedimiento
 
-            for ( int i=0; i < dibujo.length ;i++){
-                for (int j=0;  j<dibujo.length;j++){
+            for ( int i=0; i < n.length ;i++){                   //volvemos agregar una condicion donde length para que devuelva la cantidad de caracteres
+                for (int j=0;  j<n.length;j++){
                     int x = i +1;
                     if((i==j)  ||  (j == (numero - x))){
-                        dibujo[i][j] = "*";
-                        System.out.print(dibujo[i][j] + " ");
+                        n[i][j] = "*";
+                        System.out.print(n[i][j] + " ");
                     }
                     else{
-                       dibujo[i][j] = " ";
-                       System.out.print(dibujo[i][j] + " ");
+                       n[i][j] = " ";
+                       System.out.print(n[i][j] + " ");
                     }
                 }  
                 System.out.println();
